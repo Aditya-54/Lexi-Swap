@@ -10,8 +10,8 @@ LexiSwap AI is a Chrome Extension that performs context-aware lexical simplifica
     - **Double-click** any word to instantly swap it for a simpler synonym.
     - **Double-click** a simplified word to revert it to the original.
 - **Selection Tooltip**: Select any text to see options:
-    - **Swap **: Simplify the selected text.
-    - **Meaning **: Get a concise definition.
+    - Swap : Simplify the selected text.
+    - Meaning : Get a concise definition.
 - **Simplicity Levels**: Choose between Basic, Intermediate, and Advanced via the popup.
 - **Local Caching**: Minimizes API calls for repeated words.
 - **Non-Intrusive UI**: Shadow DOM tooltip appears near the cursor.
