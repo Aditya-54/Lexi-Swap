@@ -1,0 +1,62 @@
+/* Auto-Highlighting Styles */
+.lexiswap-word {
+    text-decoration: underline dotted #4CAF50;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.lexiswap-word:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #2E7D32;
+}
+
+/* Magic Animation States */
+.lexiswap-loading {
+    animation: lexiPulse 1.5s infinite;
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.lexiswap-simplified {
+    color: #155724;
+    background-color: #d4edda;
+    text-decoration: none;
+    padding: 0 2px;
+    font-weight: 500;
+    animation: lexiMagicSwap 0.6s ease-out;
+}
+
+@keyframes lexiPulse {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 5px #4CAF50;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes lexiMagicSwap {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+        filter: blur(4px);
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
